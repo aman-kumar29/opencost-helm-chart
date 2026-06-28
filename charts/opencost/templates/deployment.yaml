@@ -122,7 +122,6 @@ spec:
             periodSeconds: {{ .Values.opencost.exporter.startupProbe.periodSeconds }}
             failureThreshold: {{ .Values.opencost.exporter.startupProbe.failureThreshold }}
             timeoutSeconds: {{ .Values.opencost.exporter.startupProbe.timeoutSeconds }}
-            successThreshold: {{ .Values.opencost.exporter.startupProbe.successThreshold }}
           {{- end }}
           {{- if .Values.opencost.exporter.livenessProbe.enabled }}
           livenessProbe:
@@ -133,8 +132,7 @@ spec:
             periodSeconds: {{ .Values.opencost.exporter.livenessProbe.periodSeconds }}
             failureThreshold: {{ .Values.opencost.exporter.livenessProbe.failureThreshold }}
             timeoutSeconds: {{ .Values.opencost.exporter.livenessProbe.timeoutSeconds }}
-            successThreshold: {{ .Values.opencost.exporter.livenessProbe.successThreshold }}
-          {{- end }}
+           {{- end }}
           {{- if .Values.opencost.exporter.readinessProbe.enabled }}
           readinessProbe:
             httpGet:

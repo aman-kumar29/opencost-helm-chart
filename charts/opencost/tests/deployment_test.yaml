@@ -33,14 +33,8 @@ tests:
           path: spec.template.spec.containers[0].startupProbe.timeoutSeconds
           value: 7
       - equal:
-          path: spec.template.spec.containers[0].startupProbe.successThreshold
-          value: 2
-      - equal:
           path: spec.template.spec.containers[0].livenessProbe.timeoutSeconds
           value: 8
-      - equal:
-          path: spec.template.spec.containers[0].livenessProbe.successThreshold
-          value: 3
       - equal:
           path: spec.template.spec.containers[0].readinessProbe.timeoutSeconds
           value: 9
