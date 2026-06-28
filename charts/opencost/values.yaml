@@ -340,7 +340,7 @@ opencost:
       # -- Number of failures for probe to be considered failed
       failureThreshold: 30
       # -- Number of seconds after which the probe times out
-      timeoutSeconds: 5
+      timeoutSeconds: 1
     # Liveness probe configuration
     livenessProbe:
       # -- Whether probe is enabled
