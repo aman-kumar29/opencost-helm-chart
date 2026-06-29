@@ -132,7 +132,7 @@ spec:
             periodSeconds: {{ .Values.opencost.exporter.livenessProbe.periodSeconds }}
             failureThreshold: {{ .Values.opencost.exporter.livenessProbe.failureThreshold }}
             timeoutSeconds: {{ .Values.opencost.exporter.livenessProbe.timeoutSeconds }}
-           {{- end }}
+          {{- end }}
           {{- if .Values.opencost.exporter.readinessProbe.enabled }}
           readinessProbe:
             httpGet:
